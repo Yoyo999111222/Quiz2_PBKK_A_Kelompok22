@@ -1,4 +1,4 @@
-# Quiz2_PBKK_A_5025211121
+# Quiz2_PBKK_A_Kelompok22
 
 Frederick Yonatan Susanto / 5025211121
 
