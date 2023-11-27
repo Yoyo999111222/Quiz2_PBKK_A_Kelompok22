@@ -4,14 +4,14 @@
   <div id="wrapper">
 
     <!-- Sidebar -->
-    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+    <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar" style="background: linear-gradient(to right, #001F3F, #5200FF);">
 
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?php echo base_url(); ?>">
         <div class="sidebar-brand-icon">
-          <i class="fas fa-store"></i>
+          <img src="<?php echo base_url() ?>assets/logo1.png" alt="" width="70">
         </div>
-        <div class="sidebar-brand-text mx-3">KNOWLEDGE STORE</div>
+        <div class="sidebar-brand-text mx-3">Ticket Mania</div>
       </a>
 
       <!-- Divider -->
@@ -20,43 +20,36 @@
       <!-- Nav Item - Dashboard -->
       <li class="nav-item">
         <a class="nav-link" href="<?php echo base_url(); ?>">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Dashboard</span></a>
+          <i class="fa-solid fa-film"></i>
+          <span>Tayang Saat Ini</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<?php echo base_url(); ?>">
+          <i class="fa-solid fa-forward"></i>
+          <span>Akan Datang</span></a>
       </li>
 
       <!-- Divider -->
       <hr class="sidebar-divider">
 
-      <!-- Heading -->
-      <div class="sidebar-heading">
-        Kategori
-      </div>
-
       <!-- Nav Item - Tables -->
       <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url(); ?>kategori/elektronik">
-          <i class="fas fa-w fa-tv"></i>
-          <span>Elektronik</span></a>
+        <a class="nav-link" href="<?php echo base_url(); ?>kategori/review">
+          <!-- review icon -->
+          <i class="fa-solid fa-star"></i>
+          <span>Review dan Rating</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url(); ?>kategori/pakaian_pria">
-          <i class="fas fa-w fa-tshirt"></i>
-          <span>Pakaian Pria</span></a>
+        <a class="nav-link" href="<?php echo base_url(); ?>kategori/reward">
+          <!-- promotion icon -->
+          <i class="fa-solid fa-rectangle-ad"></i>
+          <span>Reward dan Promo</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url(); ?>kategori/pakaian_wanita">
-          <i class="fas fa-w fa-tshirt"></i>
-          <span>Pakaian Wanita</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url(); ?>kategori/pakaian_anak_anak">
-          <i class="fas fa-w fa-tshirt"></i>
-          <span>Pakaian Anak-anak</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url(); ?>kategori/peralatan_olahraga">
-          <i class="fas fa-fw fa-futbol"></i>
-          <span>Peralatan Olahraga</span></a>
+        <a class="nav-link" href="<?php echo base_url(); ?>kategori/lokasi">
+          <!-- location tag icon -->
+          <i class="fa fa-map-marker-alt"></i>
+          <span>Lokasi</span></a>
       </li>
 
       <!-- Divider -->
@@ -74,10 +67,10 @@
     <div id="content-wrapper" class="d-flex flex-column">
 
       <!-- Main Content -->
-      <div id="content">
+      <div id="content" style="background: linear-gradient(to right, #000000, #333333);">
 
         <!-- Topbar -->
-        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+        <nav class="navbar navbar-expand navbar-light topbar mb-4 static-top shadow" style="background: linear-gradient(to right, #007BFF, #000000);">
 
           <!-- Sidebar Toggle (Topbar) -->
           <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
@@ -134,11 +127,11 @@
               <ul class="na navbar-nav navbar-right">
                 <?php if ($this->session->userdata('username')) { ?>
                   <li>
-                    <div>Selamat Datang, <?php echo $this->session->userdata('username') ?>!</div>
+                    <div>Halo, <?php echo $this->session->userdata('username') ?>!</div>
                   </li>
-                  <li class="ml-2"><?php echo anchor('auth/logout', 'Logout') ?></li>
+                  <li class="ml-3"><?php echo anchor('auth/logout', '<i class="fas fa-sign-out-alt"></i> Keluar'); ?></li>
                 <?php } else { ?>
-                  <li><?php echo anchor('auth/login', 'Login'); ?></li>
+                  <li><?php echo anchor('auth/login', '<i class="fas fa-sign-in-alt"></i> Masuk'); ?></li>
                 <?php } ?>
               </ul>
             </div>

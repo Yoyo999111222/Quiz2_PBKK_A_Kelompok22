@@ -4,14 +4,14 @@
   <div id="wrapper">
 
     <!-- Sidebar -->
-    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+    <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar" style="background-color: #5200FF">
 
       <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?php echo base_url('admin/dashboard') ?>">
         <div class="sidebar-brand-icon">
-          <i class="fas fa-store"></i>
+          <i class="fa-solid fa-lock"></i>
         </div>
-        <div class="sidebar-brand-text mx-3">ADMIN</div>
+        <div class="sidebar-brand-text mx-3">Admin</div>
       </a>
 
       <!-- Divider -->
@@ -27,12 +27,12 @@
       <li class="nav-item">
         <a class="nav-link" href="<?php echo base_url('admin/data_barang') ?>">
           <i class="fas fa-w fa-database"></i>
-          <span>Data Barang</span></a>
+          <span>Data Film</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="<?php echo base_url('admin/invoice') ?>">
           <i class="fas fa-w fa-file-invoice"></i>
-          <span>Invoice</span></a>
+          <span>Riwayat Pemesanan</span></a>
       </li>
 
       <!-- Divider -->
@@ -98,14 +98,12 @@
             <ul class="na navbar-nav navbar-right">
               <?php if ($this->session->userdata('username')) { ?>
                 <li>
-                  <div>Selamat Datang, <?php echo $this->session->userdata('username') ?>!</div>
+                  <div>Halo, <?php echo $this->session->userdata('username') ?>!</div>
                 </li>
-                <li class="ml-2"><?php echo anchor('auth/logout', 'Logout') ?></li>
+                <li class="ml-3"><?php echo anchor('auth/logout', '<i class="fas fa-sign-out-alt"></i> Keluar') ?></li>
               <?php } else { ?>
-                <li><?php echo anchor('auth/login', 'Login'); ?></li>
+                <li><?php echo anchor('auth/login', '<i class="fas fa-sign-in-alt"></i> Masuk'); ?></li>
               <?php } ?>
             </ul>
           </ul>
-
         </nav>
-        <!-- End of Topbar -->

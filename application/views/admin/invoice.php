@@ -1,10 +1,10 @@
 <div class="container-fluid">
-  <h4>Invoice Pemesanan Produk</h4>
+  <h4>Invoice Pemesanan Tiket</h4>
   <table class="table table-bordered table-hover table-striped">
     <tr>
-      <th>Id Invoice</th>
+      <th>ID</th>
       <th>Nama Pemesan</th>
-      <th>Alamat Pengiriman</th>
+      <th>Alamat Email</th>
       <th>Tanggal Pemesanan</th>
       <th>Batas Pembayaran</th>
       <th>Aksi</th>

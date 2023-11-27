@@ -1,9 +1,9 @@
 <div class="container-fluid">
   <h4>Keranjang Belanja</h4>
   <table class="table table-bordered table-stripped table-hover">
-    <tr>
+    <tr class="text-center">
       <th>No.</th>
-      <th>Nama Produk</th>
+      <th>Judul Film</th>
       <th>Jumlah</th>
       <th>Harga</th>
       <th>Sub-Total</th>
@@ -29,11 +29,11 @@
     <a href="<?php echo base_url('dashboard/hapus_keranjang') ?>">
       <div class="btn btn-sm btn-danger">Hapus Keranjang</div>
     </a>
-    <a href="<?php echo base_url('dashboard/index') ?>">
+    <a href="<?php echo base_url('/') ?>">
       <div class="btn btn-sm btn-primary">Lanjutkan Belanja</div>
     </a>
     <a href="<?php echo base_url('dashboard/pembayaran') ?>">
-      <div class="btn btn-sm btn-success">Pembayaran</div>
+      <div class="btn btn-sm btn-success">Bayar</div>
     </a>
   </div>
 </div>

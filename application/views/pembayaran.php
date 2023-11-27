@@ -12,40 +12,45 @@
           echo "<h4>Total Belanja Anda: Rp. " . number_format($grand_total, 0, ',', '.');
         ?>
       </div><br><br>
-      <h3>Input Alamat Pengiriman dan Pembayaran</h3>
+      <h3>Form Pembayaran</h3>
       <form method="post" action="<?php echo base_url() ?>dashboard/proses_pesanan">
         <div class="form-group">
           <label for="Nama Lengkap">Nama Lengkap</label>
-          <input type="text" name="nama" placeholder="Nama Lengkap Anda" class="form-control">
+          <input type="text" name="nama" class="form-control" required>
         </div>
         <div class="form-group">
-          <label for="Alamat Lengkap">Alamat Lengkap</label>
-          <input type="text" name="alamat" placeholder="Alamat Lengkap Anda" class="form-control">
+          <label for="Alamat Email">Alamat Email</label>
+          <input type="email" name="alamat" class="form-control" required>
         </div>
         <div class="form-group">
           <label for="No. Telepon">No. Telepon</label>
-          <input type="text" name="no_telp" placeholder="Nomor Telepon Anda" class="form-control">
+          <input type="text" name="no_telp" class="form-control" required>
         </div>
         <div class="form-group">
-          <label for="Jasa Pengiriman">Jasa Pengiriman</label>
-          <select name="jasa" id="" class="form-control">
-            <option value="">JNE</option>
-            <option value="">TIKI</option>
-            <option value="">POS Indonesia</option>
-            <option value="">GOJEK</option>
-            <option value="">GRAB</option>
-          </select>
+          <label for="Pilih Seat" class="form-label">Pilih Seat</label>
+          <br>
+          <div class="row g-3 align-items-center">
+            <div class="col">
+              <img src="<?php echo base_url() ?>assets/img/seat.svg" class="img-responsive">
+            </div>
+            <div class="col">
+              <input type="text" name="pilih_seat" class="form-control" required placeholder="Masukkan seat*">
+              <small>*) pisahkan masing-masing seat dengan koma (,) jika menonton lebih dari 1 film</small>
+            </div>
+          </div>  
         </div>
         <div class="form-group">
-          <label for="Pilih Bank">Pilih Bank</label>
-          <select name="bank" id="" class="form-control">
-            <option value="">BCA - XXXXXXX</option>
-            <option value="">BNI - XXXXXXX</option>
-            <option value="">BRI - XXXXXXX</option>
-            <option value="">MANDIRI - XXXXXXX</option>
+          <label for="Pilih Bank">Pilih Metode Pembayaran</label>
+          <select name="bank" id="" class="form-control" required>
+            <option value="">Pilih Metode Pembayaran</option>
+            <option value="">Transfer Bank</option>
+            <option value="">GoPay</option>
+            <option value="">OVO</option>
+            <option value="">DANA</option>
+            <option value="">ShopeePay</option>
           </select>
         </div>
-        <button type="submit" class="btn btn-sm btn-primary mb-3">Pesan</button>
+        <button type="submit" class="btn btn-sm btn-primary mb-3">Bayar</button>
       </form>
     <?php
         } else {

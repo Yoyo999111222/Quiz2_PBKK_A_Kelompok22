@@ -1,11 +1,11 @@
 <div class="container-fluid">
-  <h3><i class="fas fa-edit"></i>Edit Data Barang</h3>
+  <h3><i class="fas fa-edit"></i>Edit Data Film</h3>
   <?php foreach ($barang as $brg) : ?>
 
     <form action="<?php echo base_url() . 'admin/data_barang/update' ?>" method="post">
 
       <div class="for-group mb-2">
-        <label>Nama Barang</label>
+        <label>Judul Film</label>
         <input type="text" name="nama_brg" class="form-control" value="<?php echo $brg->nama_brg ?>">
       </div>
 
@@ -16,7 +16,7 @@
       </div>
 
       <div class="for-group mb-2">
-        <label>Kategori</label>
+        <label>Sinopsis</label>
         <input type="text" name="kategori" class="form-control" value="<?php echo $brg->kategori ?>">
       </div>
 
@@ -26,7 +26,7 @@
       </div>
 
       <div class="for-group mb-2">
-        <label>Stok</label>
+        <label>Jumlah Seat</label>
         <input type="text" name="stok" class="form-control" value="<?php echo $brg->stok ?>">
       </div>
 

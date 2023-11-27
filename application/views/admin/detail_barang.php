@@ -1,7 +1,7 @@
 <div class="container-fluid">
   <div class="card">
     <h5 class="card-header">
-      Detail Produk
+      Detail Film
     </h5>
     <div class="card-body">
       <?php foreach ($barang as $brg) : ?>
@@ -12,7 +12,7 @@
           <div class="col-md-8">
             <table class="table">
               <tr>
-                <td>Nama Produk</td>
+                <td>Judul Film</td>
                 <td><strong><?php echo $brg->nama_brg ?></strong></td>
               </tr>
               <tr>
@@ -20,11 +20,11 @@
                 <td><strong><?php echo $brg->keterangan ?></strong></td>
               </tr>
               <tr>
-                <td>Kategori</td>
+                <td>Sinopsis</td>
                 <td><strong><?php echo $brg->kategori ?></strong></td>
               </tr>
               <tr>
-                <td>Stok</td>
+                <td>Jumlah Seat Tersedia</td>
                 <td><strong><?php echo $brg->stok ?></strong></td>
               </tr>
               <tr>
