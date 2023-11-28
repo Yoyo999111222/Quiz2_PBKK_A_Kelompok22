@@ -75,7 +75,7 @@
                 <button type="submit" class="btn btn-user btn-block" style="background-color: #FFD600; color: #000000; font-weight: 700">Sign Up</button>
               </form>
               <hr>
-              <div class="text-warning text-center">
+              <div class="text-center text-warning">
                 <h6>Already have an account?
                 <a class="medium text-white" href="<?php echo base_url('auth/login') ?>">
                   Log In!

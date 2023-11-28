@@ -21,6 +21,7 @@
     </h5>
     <div class="card-body">
       <?php foreach ($barang as $brg) : ?>
+        <?php if ($brg->id_brg < 13) : ?>
         <div class="row">
           <div class="col-md-4">
             <img src="<?php echo base_url() . '/uploads/' . $brg->gambar ?>" class="card-img-top">
@@ -56,6 +57,32 @@
             <?php echo anchor('welcome/index/', '<div class="btn btn-sm btn-danger">Kembali</div>') ?>
           </div>
         </div>
+
+        <?php else : ?>
+          <div class="row">
+          <div class="col-md-4">
+            <img src="<?php echo base_url() . '/uploads/' . $brg->gambar ?>" class="card-img-top">
+          </div>
+          <div class="col-md-8">
+            <table class="table">
+              <tr>
+                <td>Title</td>
+                <td><strong><?php echo $brg->nama_brg ?></strong></td>
+              </tr>
+              <tr>
+                <td>Description</td>
+                <td><strong><?php echo $brg->keterangan ?></strong></td>
+              </tr>
+              <tr>
+                <td>Synopsis</td>
+                <td><strong><?php echo $brg->kategori ?></strong></td>
+              </tr>
+            </table>
+            <?php echo anchor('kategori/comingsoon', '<div class="btn btn-sm btn-danger">Kembali</div>') ?>
+          </div>
+        </div>
+        <?php endif; ?>
+
       <?php endforeach; ?>
     </div>
   </div>
