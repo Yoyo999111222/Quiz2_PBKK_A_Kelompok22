@@ -12,6 +12,21 @@
   .card-body {
     background: linear-gradient(to right, #001f3f, #8e44ad);
   }
+
+    /* Custom CSS to remove white lines above and below the video */
+    #videoModal .modal-content {
+        border: none;
+        box-shadow: none;
+    }
+
+    #videoModal .modal-dialog {
+        margin: 0;
+    }
+
+    #videoModal .modal-header,
+    #videoModal .modal-footer {
+        border: none;
+    }
 </style>
 
 <div class="container-fluid">
@@ -59,7 +74,9 @@
     
             <!-- Modal -->
           <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
-              <div class="modal-dialog" role="document">
+
+              <div class="modal-dialog" role="document" style="border: none; box-shadow: none">
+
                   <div class="modal-content" style="background-color: transparent; border: none;">
                       <div class="modal-header">
                           <h5 class="modal-title" id="videoModalLabel"><?php echo $brg->nama_brg . " Trailer" ?></h5>
@@ -99,6 +116,7 @@
                           width: '100%',
                           height: '315',
                           videoId: '<?php echo $brg->link; ?>',
+
                           playerVars: {
                               'autoplay': 0,
                               'controls': 1,
