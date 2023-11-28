@@ -1,8 +1,8 @@
 <div class="container-fluid">
   <div class="table-responsive">
-    <table class="table table-strip table-bordered table-hover">
+    <table class="table table-strip table-bordered table-hover text-white">
       <thead>
-        <tr class="text-center">
+        <tr class="text-center bg-gradient-warning text-dark">
           <th>No</th>
           <th>Movie Title</th>
           <th>Rating</th>

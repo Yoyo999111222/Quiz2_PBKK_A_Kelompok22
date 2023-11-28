@@ -28,9 +28,10 @@ class Kategori extends CI_Controller
 
   public function comingsoon()
   {
+    $data['barang'] = $this->model_barang->tampil_data()->result();
     $this->load->view('templates/header');
     $this->load->view('templates/sidebar');
-    $this->load->view('comingsoon');
+    $this->load->view('comingsoon', $data);
     $this->load->view('templates/footer');
   }
 }

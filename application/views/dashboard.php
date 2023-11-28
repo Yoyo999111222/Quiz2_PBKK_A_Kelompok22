@@ -13,6 +13,14 @@
       color: #FFFFFF; /* Text color on hover, adjust as needed */
   }
 
+  .btn-primary{
+    color: black;
+  }
+
+  .btn-primary:hover {
+    color: white;
+  }
+
   .badge-light-purple {
     background-color: #B19CD9; /* Light purple color */
     color: black; /* Text color, adjust as needed */
