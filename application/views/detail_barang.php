@@ -66,7 +66,7 @@
             </table>
             <?php echo anchor('dashboard/tambah_ke_keranjang/' . $brg->id_brg, '<div class="btn btn-sm btn-primary">Beli Tiket</div>') ?>
             <?php echo anchor('welcome/index/', '<div class="btn btn-sm btn-danger">Kembali</div>') ?>
-            <div class="btn btn-sm btn-success" style="background-color: #28a745; color: #fff; data-toggle="modal" data-target="#videoModal">Watch Trailer</div>
+            <div class="btn btn-sm btn-success" style="background-color: #28a745; color: #fff;" data-toggle="modal" data-target="#videoModal">Watch Trailer</div>
     
             <!-- Modal -->
           <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
@@ -154,8 +154,8 @@
               </tr>
             </table>
             <?php echo anchor('kategori/comingsoon', '<div class="btn btn-sm btn-danger">Kembali</div>') ?>
-            <div class="btn btn-sm btn-success" style="background-color: #28a745; color: #fff; data-toggle="modal" data-target="#videoModal">Watch Trailer</div>
-            
+            <div class="btn btn-sm btn-success" style="background-color: #28a745; color: #fff;" data-toggle=modal data-target="#videoModal">Watch Trailer</div>
+
                         <!-- Modal -->
           <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
 
