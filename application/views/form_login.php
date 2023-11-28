@@ -57,7 +57,7 @@
               <div class="col-lg-12">
                 <div class="p-5">
                   <div class="text-center">
-                    <h1 class="h4 text-yellow mb-4">Log In</h1>
+                    <h1 class="h4 text-warning mb-4">Log In</h1>
                   </div>
                   <?php echo $this->session->flashdata('pesan') ?>
                   <form method="post" action="<?php echo base_url('auth/login') ?>" class="user">
