@@ -72,7 +72,7 @@
                     <button type="submit" class="btn btn-user btn-block" style="background-color: #FFD600; color: #000000; font-weight: 700">Log In</button>
                   </form>
                   <hr>
-                  <div class="text-center">
+                  <div class="text-center text-warning">
                     <h6>Don't have an account yet? 
                       <a class="medium text-white" href="<?php echo base_url('registrasi/index') ?>">
                       Sign Up!

@@ -1,3 +1,19 @@
+<style>
+  .card {
+    background: transparent; /* Set latar belakang card menjadi transparan */
+    border: 1px solid white; /* Atur border card menjadi putih */
+  }
+
+  .card-header {
+    background-color: #001f3f; /* Warna header card */
+    color: white; /* Warna teks header card */
+  }
+
+  .card-body {
+    background: linear-gradient(to right, #001f3f, #8e44ad);
+  }
+</style>
+
 <div class="container-fluid">
   <div class="card">
     <h5 class="card-header">
@@ -10,7 +26,7 @@
             <img src="<?php echo base_url() . '/uploads/' . $brg->gambar ?>" class="card-img-top">
           </div>
           <div class="col-md-8">
-            <table class="table">
+            <table class="table text-white">
               <tr>
                 <td>Title</td>
                 <td><strong><?php echo $brg->nama_brg ?></strong></td>
@@ -31,7 +47,7 @@
                 <td>Price</td>
                 <td>
                   <strong>
-                    <div class="btn btn-sm btn-success">Rp. <?php echo number_format($brg->harga, 0, ',', '.') ?></div>
+                    <div class="btn btn-sm btn-success" style="background-color: #ffa500; color: black;">Rp. <?php echo number_format($brg->harga, 0, ',', '.') ?></div>
                   </strong>
                 </td>
               </tr>

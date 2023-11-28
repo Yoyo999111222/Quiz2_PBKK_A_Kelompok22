@@ -1,8 +1,8 @@
 <div class="container-fluid">
-  <h4>Detail Pesanan <div class="btn btn-sm btn-success">No. Invoice: <?php echo $invoice->id ?></div>
+  <h4 class="text-white">Detail Pesanan <div class="btn btn-sm btn-success" style="color: black;">No. Invoice: <?php echo $invoice->id ?></div>
   </h4>
-  <table class="table table-bordered table-hover table-striped">
-    <tr class="text-center">
+  <table class="table table-bordered table-hover table-striped text-white">
+    <tr class="text-center" style="background: linear-gradient(to right, #FF6B6B, #FFD966); color: black;">
       <th>ID</th>
       <th>Nama Film</th>
       <th>Jumlah Tiket</th>

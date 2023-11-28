@@ -4,18 +4,21 @@
   <div id="wrapper">
 
     <!-- Sidebar -->
-    <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar" style="background: linear-gradient(to right, #001F3F, #5200FF);">
+    <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar" style="background: linear-gradient(to right, #001F3F, #5200FF); border: 1px solid gold;">
 
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?php echo base_url(); ?>">
         <div class="sidebar-brand-icon">
-          <img src="<?php echo base_url() ?>assets/logo1.png" alt="" width="70">
+          <!-- <img src="<?php echo base_url() ?>assets/logo1.png" alt="" width="70"> -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-ticket" viewBox="0 0 16 16">
+            <path d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5V6a.5.5 0 0 1-.5.5 1.5 1.5 0 0 0 0 3 .5.5 0 0 1 .5.5v1.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 11.5V10a.5.5 0 0 1 .5-.5 1.5 1.5 0 1 0 0-3A.5.5 0 0 1 0 6zM1.5 4a.5.5 0 0 0-.5.5v1.05a2.5 2.5 0 0 1 0 4.9v1.05a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-1.05a2.5 2.5 0 0 1 0-4.9V4.5a.5.5 0 0 0-.5-.5z"/>
+          </svg>
         </div>
-        <div class="sidebar-brand-text mx-3">Ticket Mania</div>
+        <div class="sidebar-brand-text mx-3"  style="color: white;">Ticket Mania</div>
       </a>
 
       <!-- Divider -->
-      <hr class="sidebar-divider my-0">
+      <hr class="sidebar-divider my-0"  style="background-color: gold;">
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item">
@@ -53,7 +56,7 @@
       </li>
 
       <!-- Divider -->
-      <hr class="sidebar-divider d-none d-md-block">
+      <hr class="sidebar-divider d-none d-md-block" style="background-color: gold;">
 
       <!-- Sidebar Toggler (Sidebar) -->
       <div class="text-center d-none d-md-inline">
@@ -70,7 +73,7 @@
       <div id="content" style="background: linear-gradient(to right, #000000, #333333);">
 
         <!-- Topbar -->
-        <nav class="navbar navbar-expand navbar-light topbar mb-4 static-top shadow" style="background: linear-gradient(to right, #007BFF, #000000);">
+        <nav class="navbar navbar-expand navbar-light topbar mb-4 static-top shadow" style="background: linear-gradient(to right, #007BFF, #000000); border: 1px solid gold;">
 
           <!-- Sidebar Toggle (Topbar) -->
           <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
@@ -124,7 +127,7 @@
 
               <div class="topbar-divider d-none d-sm-block"></div>
 
-              <ul class="na navbar-nav navbar-right">
+              <ul class="text-info na navbar-nav navbar-right">
                 <?php if ($this->session->userdata('username')) { ?>
                   <li>
                     <div>Welcome, <?php echo $this->session->userdata('username') ?>!</div>

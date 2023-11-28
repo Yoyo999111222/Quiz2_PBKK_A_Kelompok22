@@ -4,7 +4,7 @@
   <div id="wrapper">
 
     <!-- Sidebar -->
-    <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar" style="background-color: #5200FF">
+    <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar" style="background: linear-gradient(to left, #008000, #000000); border: 1px solid gold;">
 
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?php echo base_url('admin/dashboard') ?>">
@@ -50,10 +50,10 @@
     <div id="content-wrapper" class="d-flex flex-column">
 
       <!-- Main Content -->
-      <div id="content">
+      <div id="content" style="background: linear-gradient(to right, #000000, #333333);">
 
         <!-- Topbar -->
-        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow" style="background: linear-gradient(to right, #00AA00, #000000); border: 1px solid gold;">
 
           <!-- Sidebar Toggle (Topbar) -->
           <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
@@ -95,7 +95,7 @@
               </div>
             </li>
 
-            <ul class="na navbar-nav navbar-right">
+            <ul class="na navbar-nav navbar-right text-warning">
               <?php if ($this->session->userdata('username')) { ?>
                 <li>
                   <div>Halo, <?php echo $this->session->userdata('username') ?>!</div>

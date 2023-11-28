@@ -2,8 +2,8 @@ SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
 
-CREATE DATABASE IF NOT EXISTS `ticketmania` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE `ticketmania`;
+CREATE DATABASE IF NOT EXISTS `ticket_mania` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `ticket_mania`;
 
 CREATE TABLE IF NOT EXISTS `tb_barang` (
   `id_brg` int(11) NOT NULL,

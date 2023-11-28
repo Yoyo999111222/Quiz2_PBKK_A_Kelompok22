@@ -1,7 +1,7 @@
 <div class="container-fluid">
-  <h4>Invoice Pemesanan Tiket</h4>
-  <table class="table table-bordered table-hover table-striped">
-    <tr>
+  <h4 class="text-white">Invoice Pemesanan Tiket</h4>
+  <table class="table table-bordered table-hover table-striped text-white">
+    <tr class="text-center" style="background: linear-gradient(to right, #FF6B6B, #FFD966); color: black;">
       <th>ID</th>
       <th>Nama Pemesan</th>
       <th>Alamat Email</th>

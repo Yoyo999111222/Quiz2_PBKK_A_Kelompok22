@@ -52,7 +52,7 @@
           <div class="col-lg">
             <div class="p-5">
               <div class="text-center">
-              <h1 class="h4 text-yellow mb-4">Sign Up</h1>
+              <h1 class="h4 text-warning mb-4">Sign Up</h1>
               </div>
               <form class="user" method="post" action="<?php echo base_url('registrasi/index') ?>">
                 <div class="form-group">
@@ -75,7 +75,7 @@
                 <button type="submit" class="btn btn-user btn-block" style="background-color: #FFD600; color: #000000; font-weight: 700">Sign Up</button>
               </form>
               <hr>
-              <div class="text-center">
+              <div class="text-warning text-center">
                 <h6>Already have an account?
                 <a class="medium text-white" href="<?php echo base_url('auth/login') ?>">
                   Log In!
