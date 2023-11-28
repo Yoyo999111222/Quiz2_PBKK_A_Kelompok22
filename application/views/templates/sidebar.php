@@ -21,12 +21,12 @@
       <li class="nav-item">
         <a class="nav-link" href="<?php echo base_url(); ?>">
           <i class="fa-solid fa-film"></i>
-          <span>Tayang Saat Ini</span></a>
+          <span>Now Playing</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url(); ?>">
-          <i class="fa-solid fa-forward"></i>
-          <span>Akan Datang</span></a>
+        <a class="nav-link" href="<?php echo base_url(); ?>kategori/comingsoon">
+          <i class="fa-solid fa-clock"></i>
+          <span>Coming Soon</span></a>
       </li>
 
       <!-- Divider -->
@@ -37,19 +37,19 @@
         <a class="nav-link" href="<?php echo base_url(); ?>kategori/review">
           <!-- review icon -->
           <i class="fa-solid fa-star"></i>
-          <span>Review dan Rating</span></a>
+          <span>Rating</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="<?php echo base_url(); ?>kategori/reward">
           <!-- promotion icon -->
           <i class="fa-solid fa-rectangle-ad"></i>
-          <span>Reward dan Promo</span></a>
+          <span>Today's Promo</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="<?php echo base_url(); ?>kategori/lokasi">
           <!-- location tag icon -->
           <i class="fa fa-map-marker-alt"></i>
-          <span>Lokasi</span></a>
+          <span>Location</span></a>
       </li>
 
       <!-- Divider -->
@@ -127,11 +127,11 @@
               <ul class="na navbar-nav navbar-right">
                 <?php if ($this->session->userdata('username')) { ?>
                   <li>
-                    <div>Halo, <?php echo $this->session->userdata('username') ?>!</div>
+                    <div>Welcome, <?php echo $this->session->userdata('username') ?>!</div>
                   </li>
-                  <li class="ml-3"><?php echo anchor('auth/logout', '<i class="fas fa-sign-out-alt"></i> Keluar'); ?></li>
+                  <li class="ml-3"><?php echo anchor('auth/logout', '<i class="fas fa-sign-out-alt"></i> Sign Out'); ?></li>
                 <?php } else { ?>
-                  <li><?php echo anchor('auth/login', '<i class="fas fa-sign-in-alt"></i> Masuk'); ?></li>
+                  <li><?php echo anchor('auth/login', '<i class="fas fa-sign-in-alt"></i> Sign In'); ?></li>
                 <?php } ?>
               </ul>
             </div>

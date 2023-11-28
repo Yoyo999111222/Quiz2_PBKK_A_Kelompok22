@@ -1,62 +1,86 @@
-<style>
-.cyan-text {
-    color: #00FFFF; /* Cyan color */
-}
-</style>
-
 <div class="container-fluid">
   <div class="table-responsive">
     <table class="table table-strip table-bordered table-hover">
       <thead>
         <tr class="text-center">
           <th>No</th>
-          <th>Judul Film</th>
+          <th>Movie Title</th>
           <th>Rating</th>
-          <th>Jumlah Rating</th>
+          <th>Number of Ratings</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td class="text-center">1</td>
-          <td>The Shawshank Redemption</td>
-          <td class="text-center"><i class="fa-solid fa-star" style="color: #FFD600;"></i> 9.3</td>
-          <td class="text-center">2.8M</td>
+          <td>JKT48: Ponytail dan Shu-Shu</td>
+          <td class="text-center"><i class="fa-solid fa-star" style="color: #FFD600;"></i> 10 / 10</td>
+          <td class="text-center">1.2M</td>
         </tr>
         <tr>
           <td class="text-center">2</td>
-          <td>The Godfather</td>
-          <td class="text-center"><i class="fa-solid fa-star" style="color: #FFD600;"></i> 9.2</td>
-          <td class="text-center">1.9M</td>
+          <td>Spider-Man: Across the Spider-Verse</td>
+          <td class="text-center"><i class="fa-solid fa-star" style="color: #FFD600;"></i> 8.7 / 10</td>
+          <td class="text-center">302K</td>
         </tr>
         <tr>
           <td class="text-center">3</td>
-          <td>The Dark Knight</td>
-          <td class="text-center"><i class="fa-solid fa-star" style="color: #FFD600;"></i> 9.0</td>
-          <td class="text-center">2.8M</td>
+          <td>Oppenheimer</td>
+          <td class="text-center"><i class="fa-solid fa-star" style="color: #FFD600;"></i> 8.5 / 10</td>
+          <td class="text-center">520K</td>
         </tr>
         <tr>
           <td class="text-center">4</td>
-          <td>The Godfather Part II</td>
-          <td class="text-center"><i class="fa-solid fa-star" style="color: #FFD600;"></i> 9.0</td>
-          <td class="text-center">1.3M</td>
+          <td>Barbie</td>
+          <td class="text-center"><i class="fa-solid fa-star" style="color: #FFD600;"></i> 7.0 / 10</td>
+          <td class="text-center">391K</td>
         </tr>
         <tr>
           <td class="text-center">5</td>
-          <td>12 Angry Men</td>
-          <td class="text-center"><i class="fa-solid fa-star" style="color: #FFD600"></i> 8.9</td>
-          <td class="text-center">842K</td>
+          <td>The Equalizer 3</td>
+          <td class="text-center"><i class="fa-solid fa-star" style="color: #FFD600;"></i> 6.9 / 10</td>
+          <td class="text-center">70K</td>
         </tr>
         <tr>
           <td class="text-center">6</td>
-          <td>Schindler's List</td>
-          <td class="text-center"><i class="fa-solid fa-star" style="color: #FFD600"></i> 8.9</td>
-          <td class="text-center">1.4M</td>
+          <td>Sewu Dino</td>
+          <td class="text-center"><i class="fa-solid fa-star" style="color: #FFD600"></i> 6.2 / 10</td>
+          <td class="text-center">1.8K</td>
         </tr>
         <tr>
           <td class="text-center">7</td>
-          <td>The Lord of the Rings: The Return of the King</td>
-          <td class="text-center"><i class="fa-solid fa-star" style="color: #FFD600"></i> 8.9</td>
-          <td class="text-center">1.9M</td>
+          <td>Shazam! Fury of the Gods</td>
+          <td class="text-center"><i class="fa-solid fa-star" style="color: #FFD600"></i> 6.0 / 10</td>
+          <td class="text-center">114K</td>
+        </tr>
+        <tr>
+          <td class="text-center">8</td>
+          <td>Blue Beetle</td>
+          <td class="text-center"><i class="fa-solid fa-star" style="color: #FFD600"></i> 6.0 / 10</td>
+          <td class="text-center">70K</td>
+        </tr>
+        <tr>
+          <td class="text-center">9</td>
+          <td>PAW Patrol: The Mighty Movie</td>
+          <td class="text-center"><i class="fa-solid fa-star" style="color: #FFD600"></i> 6.0 / 10</td>
+          <td class="text-center">3.7K</td>
+        </tr>
+        <tr>
+          <td class="text-center">10</td>
+          <td>Fast X</td>
+          <td class="text-center"><i class="fa-solid fa-star" style="color: #FFD600"></i> 5.8 / 10</td>
+          <td class="text-center">103K</td>
+        </tr>
+        <tr>
+          <td class="text-center">11</td>
+          <td>The Nun II</td>
+          <td class="text-center"><i class="fa-solid fa-star" style="color: #FFD600"></i> 5.6 / 10</td>
+          <td class="text-center">49K</td>
+        </tr>
+        <tr>
+          <td class="text-center">12</td>
+          <td>Kalian Pantas Mati</td>
+          <td class="text-center"><i class="fa-solid fa-star" style="color: #FFD600"></i> 5.5 / 10</td>
+          <td class="text-center">205</td>
         </tr>
       </tbody>
     </table>

@@ -52,15 +52,15 @@
           <div class="col-lg">
             <div class="p-5">
               <div class="text-center">
-              <h1 class="h4 text-yellow mb-4">Daftarkan akun</h1>
+              <h1 class="h4 text-yellow mb-4">Sign Up</h1>
               </div>
               <form class="user" method="post" action="<?php echo base_url('registrasi/index') ?>">
                 <div class="form-group">
-                  <input type="text" class="form-control form-control-user" placeholder="Nama Anda" name="nama">
+                  <input type="text" class="form-control form-control-user" placeholder="Name" name="nama">
                   <?php echo form_error('nama', '<div class="text-danger small ml-2">', '</div>') ?>
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control form-control-user" placeholder="Username Anda" name="username">
+                  <input type="text" class="form-control form-control-user" placeholder="Username" name="username">
                   <?php echo form_error('username', '<div class="text-danger small ml-2">', '</div>') ?>
                 </div>
                 <div class="form-group row">
@@ -69,16 +69,18 @@
                     <?php echo form_error('password_1', '<div class="text-danger small ml-2">', '</div>') ?>
                   </div>
                   <div class="col-sm-6">
-                    <input type="password" class="form-control form-control-user" placeholder="Ulangi Password" name="password_2">
+                    <input type="password" class="form-control form-control-user" placeholder="Confirm Password" name="password_2">
                   </div>
                 </div>
-                <button type="submit" class="btn btn-user btn-block" style="background-color: #FFD600; color: #000000; font-weight: 700">Daftar</button>
+                <button type="submit" class="btn btn-user btn-block" style="background-color: #FFD600; color: #000000; font-weight: 700">Sign Up</button>
               </form>
               <hr>
               <div class="text-center">
-                <a class="small" href="<?php echo base_url('auth/login') ?>">
-                  Sudah punya akun? Silakan login!
+                <h6>Already have an account?
+                <a class="medium text-white" href="<?php echo base_url('auth/login') ?>">
+                  Log In!
                 </a>
+                </h6>
               </div>
             </div>
           </div>

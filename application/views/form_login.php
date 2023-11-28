@@ -57,7 +57,7 @@
               <div class="col-lg-12">
                 <div class="p-5">
                   <div class="text-center">
-                    <h1 class="h4 text-yellow mb-4">Log in</h1>
+                    <h1 class="h4 text-yellow mb-4">Log In</h1>
                   </div>
                   <?php echo $this->session->flashdata('pesan') ?>
                   <form method="post" action="<?php echo base_url('auth/login') ?>" class="user">
@@ -69,17 +69,19 @@
                       <input type="password" class="form-control form-control-user" placeholder="Password" name="password">
                       <?php echo form_error('password', '<div class="text-danger small ml-2">', '</div>') ?>
                     </div>
-                    <button type="submit" class="btn btn-user btn-block" style="background-color: #FFD600; color: #000000; font-weight: 700">Masuk</button>
+                    <button type="submit" class="btn btn-user btn-block" style="background-color: #FFD600; color: #000000; font-weight: 700">Log In</button>
                   </form>
                   <hr>
                   <div class="text-center">
-                    <a class="small" href="<?php echo base_url('registrasi/index') ?>">
-                      Belum punya akun? Daftar!
-                    </a>
+                    <h6>Don't have an account yet? 
+                      <a class="medium text-white" href="<?php echo base_url('registrasi/index') ?>">
+                      Sign Up!
+                      </a>
+                    </h6>
                   </div>
                   <div class="text-center">
-                    <a class="small" href="<?php echo base_url('') ?>">
-                      Kembali ke beranda
+                    <a class="medium text-white" href="<?php echo base_url('') ?>">
+                      Back to Home
                     </a>
                   </div>
                 </div>

@@ -12,23 +12,23 @@
           <div class="col-md-8">
             <table class="table">
               <tr>
-                <td>Judul Film</td>
+                <td>Title</td>
                 <td><strong><?php echo $brg->nama_brg ?></strong></td>
               </tr>
               <tr>
-                <td>Keterangan</td>
+                <td>Description</td>
                 <td><strong><?php echo $brg->keterangan ?></strong></td>
               </tr>
               <tr>
-                <td>Sinopsis</td>
+                <td>Synopsis</td>
                 <td><strong><?php echo $brg->kategori ?></strong></td>
               </tr>
               <tr>
-                <td>Jumlah Seat Tersedia</td>
+                <td>Available Seats</td>
                 <td><strong><?php echo $brg->stok ?></strong></td>
               </tr>
               <tr>
-                <td>Harga</td>
+                <td>Price</td>
                 <td>
                   <strong>
                     <div class="btn btn-sm btn-success">Rp. <?php echo number_format($brg->harga, 0, ',', '.') ?></div>

@@ -28,15 +28,15 @@
 <div class="container-fluid">
   <div class="row text-center" id="filmGrid">
     <?php foreach ($barang as $brg) : ?>
-      <div class="card ml-3 mb-3 film-card" style="width: 16rem;">
+      <div class="card ml-3 mb-3 film-card mr-auto ml-auto" style="width: 16rem;">
         <img src="<?php echo base_url() . '/uploads/' . $brg->gambar ?>" class="card-img-top film-image" alt="..." style="height: 400px; object-fit: cover;">
         <div class="card-body" style="background: linear-gradient(to right, #000000, #333333); color: white;">
           <h5 class="card-title mb-1"><?php echo $brg->nama_brg ?></h5>
           <small><?php echo $brg->keterangan ?></small>
           <br>
           <span class="badge badge-pill badge-light-purple mb-3">Rp<?php echo number_format($brg->harga, 0, ',', '.') ?></span>
-          <button class="btn btn-sm btn-primary add-to-cart" data-id="<?php echo $brg->id_brg ?>">Tambah ke Keranjang</button>
-          <button class="btn btn-sm btn-cyan view-details" data-id="<?php echo $brg->id_brg ?>">Detail</button>
+          <?php echo anchor('dashboard/tambah_ke_keranjang/' . $brg->id_brg, '<div class="btn btn-sm btn-primary add-to-cart">Tambah ke Keranjang</div>') ?>
+          <?php echo anchor('dashboard/detail/' . $brg->id_brg, '<div class="btn btn-sm btn-cyan view-details">Detail</div>') ?>
         </div>
       </div>
     <?php endforeach; ?>
