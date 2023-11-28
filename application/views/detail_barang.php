@@ -60,9 +60,9 @@
             <!-- Modal -->
           <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
               <div class="modal-dialog" role="document">
-                  <div class="modal-content" style="background-color: transparent;">
+                  <div class="modal-content" style="background-color: transparent; border: none;">
                       <div class="modal-header">
-                          <h5 class="modal-title" id="videoModalLabel">YouTube Video Popup</h5>
+                          <h5 class="modal-title" id="videoModalLabel"><?php echo $brg->nama_brg . " Trailer" ?></h5>
                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                               <span aria-hidden="true">&times;</span>
                           </button>
@@ -83,6 +83,8 @@
           <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
           <script>
+              var youtubePlayer; // Declare a variable to hold the YouTube player instance
+
               $(document).ready(function () {
                   // Load YouTube API script dynamically
                   var tag = document.createElement('script');
@@ -93,10 +95,10 @@
                   // Define the onYouTubeIframeAPIReady function
                   window.onYouTubeIframeAPIReady = function () {
                       // Create a new YouTube player
-                      new YT.Player('youtubeVideo', {
+                      youtubePlayer = new YT.Player('youtubeVideo', {
                           width: '100%',
                           height: '315',
-                          videoId: 'uYPbbksJxIg',
+                          videoId: '<?php echo $brg->link; ?>',
                           playerVars: {
                               'autoplay': 0,
                               'controls': 1,
@@ -106,7 +108,16 @@
                           }
                       });
                   };
+
+                  // Attach a function to the modal's hidden event
+                  $('#videoModal').on('hidden.bs.modal', function () {
+                      // Stop the YouTube video when the modal is hidden
+                      if (youtubePlayer) {
+                          youtubePlayer.stopVideo();
+                      }
+                  });
               });
+
           </script>
     
           </div>
