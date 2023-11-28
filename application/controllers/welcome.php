@@ -16,7 +16,12 @@ class Welcome extends CI_Controller
     $data['barang'] = $this->model_barang->search_brg($this->input->get('search'));
     $this->load->view('templates/header');
     $this->load->view('templates/sidebar');
-    $this->load->view('dashboard', $data);
+    if(count($data['barang']) == 0){
+      $this->load->view('notfound');
+    }
+    else{
+      $this->load->view('dashboard', $data);
+    }
     $this->load->view('templates/footer');
   }
 }

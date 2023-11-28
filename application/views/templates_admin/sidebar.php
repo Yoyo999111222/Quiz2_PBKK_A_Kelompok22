@@ -61,11 +61,11 @@
           </button>
 
           <!-- Topbar Search -->
-          <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+          <form action="<?= base_url() . 'admin/invoice/search' ?>" class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
             <div class="input-group">
-              <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+              <input name="search" type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
               <div class="input-group-append">
-                <button class="btn btn-primary" type="button">
+                <button class="btn btn-primary" type="submit">
                   <i class="fas fa-search fa-sm"></i>
                 </button>
               </div>
@@ -98,7 +98,7 @@
             <ul class="na navbar-nav navbar-right text-success">
               <?php if ($this->session->userdata('username')) { ?>
                 <li>
-                  <div>Halo, <?php echo $this->session->userdata('username') ?>!</div>
+                  <div>Welcome, <?php echo $this->session->userdata('username') ?>!</div>
                 </li>
                 <li class="ml-3"><?php echo anchor('auth/logout', '<i class="fas fa-sign-out-alt"></i> Keluar') ?></li>
               <?php } else { ?>

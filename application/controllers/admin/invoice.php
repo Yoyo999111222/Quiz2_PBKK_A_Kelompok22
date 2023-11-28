@@ -33,4 +33,18 @@ class Invoice extends CI_Controller
     $this->load->view('admin/detail_invoice', $data);
     $this->load->view('templates_admin/footer');
   }
+
+  public function search(){
+    $data['invoice'] = $this->model_invoice->search_invoice($this->input->get('search'));
+    $this->load->view('templates_admin/header');
+    $this->load->view('templates_admin/sidebar');
+    if(count($data['invoice']) == 0){
+      $this->load->view('notfound');
+    }
+    else{
+      $this->load->view('admin/invoice', $data);
+    }
+    $this->load->view('templates_admin/footer');
+    
+  }
 }

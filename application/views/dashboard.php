@@ -36,6 +36,7 @@
 <div class="container-fluid">
   <div class="row text-center" id="filmGrid">
     <?php foreach ($barang as $brg) : ?>
+      <?php if ($brg->id_brg < 13) : ?>
       <div class="card ml-3 mb-3 film-card mr-auto ml-auto" style="width: 16rem;">
         <img src="<?php echo base_url() . '/uploads/' . $brg->gambar ?>" class="card-img-top film-image" alt="..." style="height: 400px; object-fit: cover;">
         <div class="card-body" style="background: linear-gradient(to right, #000000, #333333); color: white;">
@@ -47,6 +48,7 @@
           <?php echo anchor('dashboard/detail/' . $brg->id_brg, '<div class="btn btn-sm btn-cyan view-details">Detail</div>') ?>
         </div>
       </div>
+      <?php endif; ?>
     <?php endforeach; ?>
   </div>
 </div>

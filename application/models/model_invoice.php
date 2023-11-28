@@ -58,4 +58,19 @@ class Model_invoice extends CI_Model
       return false;
     }
   }
+
+  public function search_invoice($query)
+  {
+    $query = strtolower($query);
+    $result = $this->db->like('LOWER(nama)', $query)
+      ->or_like('LOWER(alamat)', $query)
+      ->or_like('LOWER(tgl_pesan)', $query)
+      ->or_like('LOWER(batas_bayar)', $query)
+      ->get('tb_invoice');
+    if ($result->num_rows() > 0) {
+      return $result->result();
+    } else {
+      return [];
+    }
+  }
 }

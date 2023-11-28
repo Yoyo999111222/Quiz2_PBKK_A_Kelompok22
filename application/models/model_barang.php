@@ -61,7 +61,7 @@ class Model_barang extends CI_Model
     if ($result->num_rows() > 0) {
       return $result->result();
     } else {
-      return false;
+      return [];
     }
   }
 }

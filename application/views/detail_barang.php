@@ -64,7 +64,7 @@
             <img src="<?php echo base_url() . '/uploads/' . $brg->gambar ?>" class="card-img-top">
           </div>
           <div class="col-md-8">
-            <table class="table">
+            <table class="table text-white">
               <tr>
                 <td>Title</td>
                 <td><strong><?php echo $brg->nama_brg ?></strong></td>
