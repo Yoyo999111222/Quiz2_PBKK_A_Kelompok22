@@ -95,7 +95,7 @@
               </div>
             </li>
 
-            <ul class="na navbar-nav navbar-right text-warning">
+            <ul class="na navbar-nav navbar-right text-success">
               <?php if ($this->session->userdata('username')) { ?>
                 <li>
                   <div>Halo, <?php echo $this->session->userdata('username') ?>!</div>

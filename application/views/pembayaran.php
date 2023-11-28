@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-md-2"></div>
     <div class="col-md-8">
-      <div class="btn btn-sm btn-success">
+      <div class="btn btn-sm btn-success" style="background-color: pink; color: black;">
         <?php
         $grand_total = 0;
         if ($keranjang = $this->cart->contents()) {
@@ -12,21 +12,21 @@
           echo "<h4>Total Belanja Anda: Rp. " . number_format($grand_total, 0, ',', '.');
         ?>
       </div><br><br>
-      <h3>Form Pembayaran</h3>
+      <h3 class="text-white">Form Pembayaran</h3>
       <form method="post" action="<?php echo base_url() ?>dashboard/proses_pesanan">
-        <div class="form-group">
+        <div class="form-group text-warning">
           <label for="Nama Lengkap">Nama Lengkap</label>
           <input type="text" name="nama" class="form-control" required>
         </div>
-        <div class="form-group">
+        <div class="form-group text-warning">
           <label for="Alamat Email">Alamat Email</label>
           <input type="email" name="alamat" class="form-control" required>
         </div>
-        <div class="form-group">
+        <div class="form-group text-warning">
           <label for="No. Telepon">No. Telepon</label>
           <input type="text" name="no_telp" class="form-control" required>
         </div>
-        <div class="form-group">
+        <div class="form-group text-warning">
           <label for="Pilih Seat" class="form-label">Pilih Seat</label>
           <br>
           <div class="row g-3 align-items-center">
@@ -39,7 +39,7 @@
             </div>
           </div>  
         </div>
-        <div class="form-group">
+        <div class="form-group text-warning">
           <label for="Pilih Bank">Pilih Metode Pembayaran</label>
           <select name="bank" id="" class="form-control" required>
             <option value="">Pilih Metode Pembayaran</option>
