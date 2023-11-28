@@ -10,4 +10,13 @@ class Welcome extends CI_Controller
     $this->load->view('dashboard', $data);
     $this->load->view('templates/footer');
   }
+
+  public function search()
+  {
+    $data['barang'] = $this->model_barang->search($this->input->get('search'))->result();
+    $this->load->view('templates/header');
+    $this->load->view('templates/sidebar');
+    $this->load->view('dashboard', $data);
+    $this->load->view('templates/footer');
+  }
 }

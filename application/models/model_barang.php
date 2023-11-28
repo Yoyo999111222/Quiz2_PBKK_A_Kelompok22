@@ -50,4 +50,18 @@ class Model_barang extends CI_Model
       return false;
     }
   }
+
+  public function search_brg($query)
+  {
+    $query = strtolower($query);
+    $result = $this->db->like('LOWER(nama_brg)', $query)
+      ->or_like('LOWER(keterangan)', $query)
+      ->or_like('LOWER(kategori)', $query)
+      ->get('tb_barang');
+    if ($result->num_rows() > 0) {
+      return $result->result();
+    } else {
+      return false;
+    }
+  }
 }
