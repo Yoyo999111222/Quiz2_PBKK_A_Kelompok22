@@ -32,6 +32,7 @@ class Data_barang extends CI_Controller
     $harga = $this->input->post("harga");
     $stok = $this->input->post("stok");
     $gambar = $_FILES["gambar"]["name"];
+    $link = str_replace("https://www.youtube.com/watch?v=", "", $this->input->post("link"));
     if ($gambar = '') {
     } else {
       $config['upload_path'] = './uploads';
@@ -45,12 +46,14 @@ class Data_barang extends CI_Controller
       }
     }
     $data = array(
+      'id_brg' => $this->db->select('id_brg')->get('tb_barang')->num_rows() + 1,
       'nama_brg' => $nama_brg,
       'keterangan' => $keterangan,
       'kategori' => $kategori,
       'harga' => $harga,
       'stok' => $stok,
-      'gambar' => $gambar
+      'gambar' => $gambar,
+      'link' => $link
     );
 
     $this->model_barang->tambah_barang($data, 'tb_barang');

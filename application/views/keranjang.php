@@ -1,7 +1,7 @@
 <div class="container-fluid">
-  <h4>Keranjang Belanja</h4>
-  <table class="table table-bordered table-stripped table-hover">
-    <tr class="text-center">
+  <h4 class="text-white">Keranjang Belanja</h4>
+  <table class="table table-bordered table-stripped table-hover text-white">
+    <tr class="text-center" style="background: linear-gradient(to right, #FF6B6B, #FFD966); color: black">
       <th>No.</th>
       <th>Judul Film</th>
       <th>Jumlah</th>

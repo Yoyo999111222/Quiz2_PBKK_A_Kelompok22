@@ -35,7 +35,17 @@ class Model_invoice extends CI_Model
     if ($result->num_rows() > 0) {
       return $result->result();
     } else {
-      return false;
+      return [];
+    }
+  }
+
+  public function tampil_data_userbiasa()
+  {
+    $result = $this->db->where('nama', $this->session->userdata('username'))->get('tb_invoice');
+    if ($result->num_rows() > 0) {
+      return $result->result();
+    } else {
+      return [];
     }
   }
 
@@ -66,6 +76,21 @@ class Model_invoice extends CI_Model
       ->or_like('LOWER(alamat)', $query)
       ->or_like('LOWER(tgl_pesan)', $query)
       ->or_like('LOWER(batas_bayar)', $query)
+      ->get('tb_invoice');
+    if ($result->num_rows() > 0) {
+      return $result->result();
+    } else {
+      return [];
+    }
+  }
+  public function search_invoice_userbiasa($query)
+  {
+    $query = strtolower($query);
+    $result = $this->db->like('LOWER(nama)', $query)
+      ->or_like('LOWER(alamat)', $query)
+      ->or_like('LOWER(tgl_pesan)', $query)
+      ->or_like('LOWER(batas_bayar)', $query)
+      ->or_where('nama', $this->session->userdata('username'))
       ->get('tb_invoice');
     if ($result->num_rows() > 0) {
       return $result->result();

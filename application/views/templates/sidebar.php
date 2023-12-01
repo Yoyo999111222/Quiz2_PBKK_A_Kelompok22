@@ -55,6 +55,12 @@
           <span>Location</span></a>
       </li>
 
+      <li class="nav-item">
+        <a class="nav-link" href="<?php echo base_url('invoice') ?>">
+          <i class="fas fa-w fa-file-invoice"></i>
+          <span>Riwayat Pemesanan</span></a>
+      </li>
+
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block" style="background-color: gold;">
 

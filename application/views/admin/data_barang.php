@@ -71,6 +71,10 @@
             <label for="Gambar Produk">Poster Film</label>
             <input type="file" name="gambar" class="form-control">
           </div>
+          <div class="form-group">
+            <label for="Trailer">Link Trailer</label>
+            <input type="text" name="link" class="form-control">
+          </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-danger" data-dismiss="modal">Tutup</button>
