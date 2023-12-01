@@ -3,13 +3,13 @@
   <a class="btn btn-sm btn-secondary mb-3" href="<?php echo base_url('') ?>"> <i class="fa-solid fa-eye mr-2" style="color: black;"></i>Pratinjau</a>
   <table class="table table-bordered table-hover table-striped text-white">
     <tr class="text-center" style="background: linear-gradient(to right, #FF6B6B, #FFD966); color: black;">
-      <th>No.</th>
-      <th>Judul Film</th>
-      <th>Keterangan</th>
-      <th>Sinopsis</th>
-      <th>Harga</th>
-      <th>Seat Tersedia</th>
-      <th colspan="3">Aksi</th>
+      <th style="vertical-align: middle">No.</th>
+      <th style="vertical-align: middle">Judul Film</th>
+      <th style="vertical-align: middle">Keterangan</th>
+      <th style="vertical-align: middle">Sinopsis</th>
+      <th style="vertical-align: middle">Harga</th>
+      <th style="vertical-align: middle">Seat Tersedia</th>
+      <th colspan="3" style="vertical-align: middle">Aksi</th>
     </tr>
     <?php
     $no = 1;

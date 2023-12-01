@@ -100,7 +100,7 @@
                 <li>
                   <div>Welcome, <?php echo $this->session->userdata('username') ?>!</div>
                 </li>
-                <li class="ml-3"><?php echo anchor('auth/logout', '<i class="fas fa-sign-out-alt"></i> Keluar') ?></li>
+                <li class="ml-3"><?php echo anchor('auth/logout', '<i class="fas fa-sign-out-alt"></i> Sign Out') ?></li>
               <?php } else { ?>
                 <li><?php echo anchor('auth/login', '<i class="fas fa-sign-in-alt"></i> Masuk'); ?></li>
               <?php } ?>
